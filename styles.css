@@ -1,0 +1,105 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+    padding: 40px;
+}
+
+.wrapper>div {
+    color: rgb(132, 124, 124);
+    
+}
+hr {
+    margin-top: 160px;
+    border-color: #9A9C9E;
+}
+
+.nested {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3px;
+    margin-top: 20px;
+
+}
+.nested > div > img{
+    width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        object-fit: cover;
+}
+
+.nav-list {
+    display: flex;
+    margin: 40px;
+
+}
+
+.nav-list > a {
+    list-style: none;
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list > a:last-child {
+    margin-left: auto;
+}
+
+body {
+    background: black;
+    margin: 40px;
+    /* padding: 100px 100px; */
+}
+
+.fa-phone,
+.material-icons {
+    color: #D78B57;
+    margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.tweet > div{
+    margin-bottom: 10px;
+}
+.fa-twitter {
+    color: white;
+    margin-right: 10px;
+}
+
+.flex-container {
+    display: flex;
+    gap: 10px;
+    float: left;
+}
+
+i {
+    vertical-align: middle;
+}
+
+h1 {
+    color: white;
+}
+
+.text-field {
+    height: 40px;
+    width: 70%;
+    border-radius: 25px;
+    border-style: none;
+    padding-left: 20px;
+    background: rgb(49, 49, 49);
+
+}
+
+.btn {
+    height: 40px;
+    border-radius: 25px;
+    width: 70px;
+    background: #D78B57;
+    border-style: none;
+    margin-left: -50px;
+}
+
+
