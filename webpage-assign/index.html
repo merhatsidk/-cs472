@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>WHO</title>
+    <style>
+      .nav {
+        height: 40px;
+        display: flex;
+        /* margin-left: 30px; */
+        align-items: center;
+        justify-content: space-between;
+        /* margin-right: 20px; */
+        background-color: black;
+        color: white;
+      }
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      img {
+        height: 20px;
+      }
+      .signs {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+      }
+      .translate {
+        background: white;
+        margin-right: 15px;
+        margin-left: 15px;
+      }
+      .labels label {
+        margin-left: 20px;
+        /* padding: 10px 10px; */
+      }
+      .who {
+        height: 90px;
+        margin-left: 30px;
+      }
+      ul li {
+        display: inline-block;
+        margin-right: 50px;
+      }
+      .nav2 {
+        height: 50px;
+
+        display: flex;
+        /* justify-content: space-evenly; */
+        background: #009cde;
+        align-items: center;
+      }
+      .fa-home {
+        margin-left: 30px;
+      }
+      .who-bk {
+        margin: 10px;
+        width: 95%;
+        height: 70%;
+      }
+      .middle {
+        /* background-image: url(./WHO.png); */
+        margin: 10px 10px 10px;
+      }
+      li label {
+        color: white;
+        font-weight: bolder;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 28px;
+        gap: 10px;
+      }
+      .row div img {
+        width: 300px;
+        height: 230px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="labels">
+        <label for="">Global</label>
+        <label for="">Region</label>
+        <i class="fa fa-angle-down" style="color: white; font-size: 16px"></i>
+        <!-- <select id="regions">
+                    <option label="Regions"></option>
+                    <option label="Africa"></option>
+                    <option label="Americas"></option>
+                    <option label="South-East Asia"></option>
+                    <option label="Europe"></option>
+                    <option label="Eastern Mediterranean"></option>
+                    <option label="Western Pacific"></option>
+                </select> -->
+      </div>
+      <div class="signs">
+        <label class="material-icons">search</label>
+        <img class="translate" src="./translate.png" alt="" />
+        <label for="">Select language</label>
+        <i class="fa fa-angle-down" style="color: white; font-size: 16px"></i>
+        <!-- <select id="Select language">
+                    <option label="Select language"></option>
+                    <option label="Africa"></option>
+                    <option label="Americas"></option>
+                    <option label="South-East Asia"></option>
+                    <option label="Europe"></option>
+                    <option label="Eastern Mediterranean"></option>
+                    <option label="Western Pacific"></option>
+                </select> -->
+      </div>
+    </div>
+    <img class="who" src="./WHO.png" alt="who" />
+
+    <div class="nav2">
+      <div>
+        <i class="fa fa-home" style="font-size: 38px; color: white"></i>
+      </div>
+      <ul>
+        <li>
+          <!-- <label for="">Health Topics</label>
+                <i class="fa fa-angle-down" style="color: white; font-size:16px"></i> -->
+          <select id="Select language" class="drop-down">
+            <option label="Health Topics"></option>
+          </select>
+        </li>
+        <li>
+          <!-- <label for="">Countries</label>
+                 <i class="fa fa-angle-down" style="color: white; font-size:16px"></i> -->
+          <select id="countries" class="drop-down">
+            <option label="Countries"></option>
+          </select>
+        </li>
+        <li>
+          <!-- <label for="">Newsroom</label>
+                 <i class="fa fa-angle-down" style="color: white; font-size:16px"></i> -->
+          <select id="nr" class="drop-down">
+            <option label="Newsroom"></option>
+          </select>
+        </li>
+        <li>
+          <!-- <label for="">Emergencies</label>
+                 <i class="fa fa-angle-down" style="color: white; font-size:16px"></i> -->
+          <select id="em" class="drop-down">
+            <option label="Emergencies"></option>
+          </select>
+        </li>
+        <li>
+          <!-- <label for="">Data</label>
+                 <i class="fa fa-angle-down" style="color: white; font-size:16px"></i> -->
+          <select id="data" class="drop-down">
+            <option label="Data"></option>
+          </select>
+        </li>
+        <li>
+          <!-- <label for="">About WHO </label>
+                 <i class="fa fa-angle-down" style="color: white; font-size:16px"></i> -->
+          <select id="about" class="drop-down">
+            <option label="About WHO"></option>
+          </select>
+        </li>
+      </ul>
+    </div>
+    <div class="middle">
+      <img class="who-bk" src="./who-back.webp" alt="" />
+    </div>
+
+    <div class="middle-cont">
+      <div id="div1" class="image-cont">
+        <h2>
+          COVID-19
+          <br />
+          pandemic
+        </h2>
+        <button>All Information</button>
+      </div>
+      <div id="div2" class="image-cont">
+        <h2>Monkeypox</h2>
+        <button>Learn More</button>
+      </div>
+      <div id="div3" class="image-cont">
+        <h2>Global 
+            pandemic treaty</h2>
+        <button>Meeting 18-22 July</button>
+      </div>
+    </div>
+  </body>
+</html>

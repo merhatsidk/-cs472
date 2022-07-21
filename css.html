@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .upper{
+            display: flex;
+            justify-content: space-around;
+            background: rgb(106, 231, 224);
+            
+        }
+        .heading{
+            /* display: flex; */
+            border: 1px solid;
+            background: rgb(228, 209, 173);
+            height: 40px;
+            justify-content: space-around;
+            display: flex;
+            align-items: center;
+            
+        }
+        .image-container > div >img{
+            width: 50px;
+            height: 50px;
+            /* margin-top: 10px; */
+            object-fit: cover;
+        }
+        .image-container{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .image-container > div{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .copy{
+            /* justify-content: left; */
+            margin: 5px;
+            display: flex;
+            justify-content: end;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .main-body{
+            margin: 0px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-body">
+        <div class="upper">
+            <div>Home</div>
+            <div>Mission</div>
+            <div>Careers</div>
+            <div>Contact Us</div>
+        </div>
+
+    <div class="heading">
+        <label>Heading</label>
+    </div>
+    <div class="image-container">
+        <div>
+            <img src="./images/camera.jpeg" alt="camera">
+            <div>Image 1</div>
+        </div>
+        <div>
+             <img src="./images/couples.jpeg" alt="music">
+            <div>Image 2</div>
+        </div>
+        
+    </div>
+    <div class="copy">
+         <p style="margin: 20px;">&copy; copyright</p> 
+    </div>
+    </div>
+   
+</body>
+</html>
